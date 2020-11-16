@@ -361,7 +361,9 @@ figcaption{
   padding: 0 10% 10%;
   display: none;
   overflow: hidden;
-  background-color:rgba(245,194,5,0.25);
+  background: rgb(171,128,32);
+  background: linear-gradient(356deg, rgba(171,128,32,0.7587822014051522) 0%, rgba(255,206,0,0.44496487119437944) 100%);
+}
   
   
 }
