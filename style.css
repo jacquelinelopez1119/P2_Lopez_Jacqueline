@@ -27,7 +27,7 @@ body{
 }
 .showcase:before{
 	content:"";
-	background: url("spiral-background-from-purple-curved-rays-vector.jpg") no-repeat center center/cover;
+	background: url("images/spiral-background-from-purple-curved-rays-vector.jpg") no-repeat center center/cover;
 	position:absolute;
 	top: 0;
 	left: 0; 
@@ -48,31 +48,43 @@ body{
 	
 }
 .showcase p{
-	font-size: 1.8rem;
+	font-size: 1.9rem;
 }
 .showcase h1{
-	margin-top:10px;
-	font-size: 2.3rem;
+	margin-top:3%;
+	margin-bottom: 2%;
+	font-size: 2.5rem;
 	font-family: 'Berkshire Swash', cursive;
 }
+
+.showcase .name{
+ font-size:2.2rem;
+	font-family: 'Dancing Script', cursive;
+}
+
 .btn {
 	display: inline-block;
-	border-radius:30px 4px 30px 4px;
-	background-color: white;
-	color:black;
-	padding:4%;
+	background: url("images/redbutton2.png") no-repeat center ;
+	color:white; 
+    padding: 15%;
 	margin-top:10%;
 	text-decoration:none;
-	font-size: 1.5rem;
-	transition: opacity .5s ease-in;
+	font-size: 1.3rem;
+	transition: opacity .5s ease;
+	transform:rotateY(2);
+	
 }
 .btn:hover{
-	opacity: 0.8;
+   opacity: .9;
+   transform:rotate(180deg);
+	
+}
+.showcase-inner .button{
+	font-size: 1.4rem;
 }
 
 
-
-/* nav*/
+/* menu*/
 
 .menu-wrap{
 	position:fixed;
@@ -177,7 +189,7 @@ top:10px;
 	visibility: hidden;
 }
 .menu-wrap .menu > div {
-	background: url( "red%3Awhiteswirl.png") no-repeat center ;
+	background: url( " images/red%3Awhiteswirl.png") no-repeat center ;
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -210,10 +222,13 @@ top:10px;
 	color: inherit;
 	text-decoration: none;
 	transition: color 0.4s ease;
+	transition: opacity 0.4s ease;
 	
 }
-
-
+.menu-wrap .menu > div > div > ul > li > a:hover{
+	opacity: .8;
+	color:rgba(122,34,177,1.00);
+}
 
 footer{
 	background-color:rgba(183,93,175,1.00);
@@ -237,35 +252,34 @@ aside{
 	visibility: hidden;
 	margin-top:-70px;
 }
-.top a{
-	text-decoration: none;
-	color: rgba(158,11,207,1.00);
-	font-size: 1rem;
 
-	
-}
 /*section*/
 
 section {
 	background-color:#CCB130;
     margin-top:-10px;
+
 }
 
 h2{
-	font-size:3rem;
+	border: double 6px #7D751E;
+	font-size:4rem;
 	text-align: center;
 	font-family: 'Berkshire Swash', cursive;
 	padding: 3px;
 	margin-top:10px;
 	color:white;
 	text-shadow: 2px 6px 4px #404040;
+	padding-bottom: 2%;
+
 }
 
 .img{
+
 	position: relative;
 	width:100%;
 }
- .image{
+.image{
 	display: block;
 	width: 100%;
 	
@@ -306,11 +320,11 @@ figcaption{
 	opacity: 1;
 }
 .img_title{
-	font-size: 2rem;
+	font-size: 2.2rem;
 	
 }
 .img_description{
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 
 .caption .description{
@@ -323,7 +337,7 @@ figcaption{
 	width: 100%;
 	padding: 4%;
 	margin-top: 3%;
-	border-radius: 15%;
+	
 }
 
 	
@@ -336,26 +350,52 @@ figcaption{
   border: none;
   text-align: center;
   outline: none;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   transition: 0.5s ease;
+  font-family: 'Berkshire Swash', cursive;
 }
 .active, .accordion:hover {
   background-color:rgba(195,175,40,1.00); 
 }
 .panel {
-  padding: 0 10%;
+  padding: 0 10% 10%;
   display: none;
-  background-color:rgba(250,248,248,0.33);
   overflow: hidden;
+  background-color:rgba(245,194,5,0.25);
+  
+  
 }
 
-section2 figcaption{
-	color:rgba(66,16,94,1.00);
-	font-size: 2.4rem;
+.panel p  {
+	font-size:1.4rem;
+	text-indent: 10%;
+	
+}
+.panel h3{
+	font-size: 2rem;
+	text-align: center;
+	margin-top:5%;
+	margin-bottom:5%;
+	color:rgba(138,22,209,1.00);
+	text-decoration: underline;
 }
 
-.top a{
-	display: none;
+.btn3 {
+	display: inline-block;
+	border: none;
+	border-radius:1rem;
+	background-color: white;
+	color:rgba(125,78,120,1.00);
+	padding: 1%;
+	margin-bottom:10%;
+	text-decoration:none;
+	font-size: 1rem;
+	font-weight:bold;
+	margin-left: 45%;
+	transition: opacity .5s ease-in;
+}
+.btn3:hover{
+	opacity: 0.6;
 }
 
 
@@ -368,24 +408,17 @@ desktop: 1024+ */
 /* tablets*/
 @media (min-width: 768px) and (max-width:1023px){
 	
-	.btn {
-	display: inline-block;
-	border: none;
-	border-radius:20px 4px 20px 4px;
-	background-color: aliceblue;
-	color:black;
-	padding:2%;
-	margin-top:10%;
-	text-decoration:none;
-	font-size: 1.5rem;
-	transition: opacity .5s ease-in;
-}
-	
-	section{
+	.btn{
+		margin-top:-4%;
+	}
+	.showcase-inner .button{
+		margin-top:-7%;
+	}
+section{
 		background-color:white;
 		margin-top: 3px;
 	}
-	section h2{
+section h2{
 		background-color:#CCB130;
 		padding: 1%;
 		margin-top:-2px; 
@@ -393,7 +426,7 @@ desktop: 1024+ */
 	}
 
 
-	figcaption{
+figcaption{
 		font-size:1.6rem;
 		color:#CCB130;
 		padding: 4%;
@@ -406,89 +439,72 @@ footer{
 
 	
 .showcase img{
-	width: 60%;
+	width: 50%;
 	
 }
-	.showcase p{
-		font-size: 2.7rem;
+.showcase p{
+		font-size: 2.4rem;
 	}
-	.showcase h1{
+.showcase h1{
 		font-size: 3rem;
 	}
-	.top a{
-		display: none;
-	}
+
 .img{
 		width: 49.99%;
 		float: left;
 	}
 	
-	.img_overlay{
-		height: 83%;
+.img_overlay{
+		height: 82%;
 	}
 	
-	.btn2 {
+	
+.btn2 {
 	display: inline-block;
 	border: none;
-	border-radius:1rem;
-	background-color: white;
+	border-radius:2rem;
+	background-color:rgba(190,176,43,1.00);
 	color:rgba(125,78,120,1.00);
-	padding: 1%;
-	margin-top:1rem;
+	padding: 2%;
+	margin-bottom:10%;
 	text-decoration:none;
-	font-size: 1.5rem;
+	font-size: 1rem;
+	font-weight: bolder;
 	transition: opacity .5s ease-in;
-	
 }
-		.caption{
+.btn2:hover{
+	opacity: 0.6;
+}
+
+.caption{
 	display: none;
 	}
 	
 
  .img_ticket{
-			border-top: 7px solid #CCB130;
-		border-bottom: 7px solid #CCB130;
-	 width: 80%;
-	 margin-left: 10%;
-		
+			border-top: 20px  double #CCB130;
+			border-left: 20px double  #CCB130;
+			border-right: 20px double #CCB130;
+		    border-bottom: 20px double #CCB130;
+	        width: 80%;
+	        margin-left: 10%;
 	}
 	
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 1.6rem;
-  transition: 0.5s ease;
+.panel h3{
+	font-size: 2rem;
+	text-align: center;
+	margin-top:5%;
+	margin-bottom: -5%;
 }
-.active, .accordion:hover {
-  background-color:rgba(195,175,40,1.00); 
-}
-.panel {
-  padding: 0 2%;
-  display: none;
-  background-color:rgba(250,248,248,0.33);
-  overflow: hidden;
-}
-section2 .btn2{
-	display: none;
-	
-}
-	section2 h3{
-	display: none;
-}
-section2 .img_description{
-	display: none;
-}
-	section2 figcaption{
-	color:rgba(66,16,94,1.00);
-	font-size: 3rem;
+.panel p{
+	font-size: 1.4;
+	padding-top:10%;
+	margin-bottom: -10%;
+	text-indent: 6%;
+	}
 
-}
+
+
 }
 /*Desktop*/
 
@@ -502,53 +518,37 @@ footer{
 	clear: both;
 	    border-top: 7px solid #CCB130;
 	}
-	footer ul{
+footer ul{
 		text-align: center;
 	}
-	footer ul li{
+footer ul li{
 		font-size: 1.2rem;
 		display: inline;
 		text-align: center;
 	}
 	
-
 	
 .showcase{
-	background-color:rgba(123,84,187,0.8);
-	height: 1025px;
-	
-
+	margin-top:100px;
 }
 	
-	.showcase img{
-	width: 60%;
+.showcase img{
+	width:50%;
 
 }
 		
-	.showcase p{
-		font-size: 1.5rem;
+.showcase p{
+		font-size: 1.8rem;
 	}
-	.showcase h1{
+.showcase h1{
 		font-family: 'Berkshire Swash', cursive;
 		font-size: 3rem;
 	}
-
-	.btn {
-	display: inline-block;
-	border: none;
-	border-radius:20px 4px 20px 4px;
-	background-color: white;
-	color:rgba(125,78,120,1.00);
-	padding: 2%;
-	margin-top:1rem;
-	text-decoration:none;
-	font-size: 1.5rem;
-	transition: opacity .5s ease-in;
-	
-}
-	.menu-wrap .menu >div > div> ul > li{
-	font-weight: 400;
-	
+.btn{
+		margin-top:-5%;
+	}
+	.showcase-inner .button{
+		margin-top:-10%;
 	}
 	
 nav{
@@ -566,7 +566,7 @@ nav{
  nav ul{
 	list-style-type: none;
 	text-align: center;
-	padding:2%;
+	padding:1.1%;
 	visibility: visible;
 
 }
@@ -574,120 +574,90 @@ nav{
  nav ul li{
 	display: inline;
 	color: #EFEFEF;
-	padding: 4%;
-	font-size: 1.75rem;
-
+	padding: 8%;
+	font-size: 1.55rem;
+    font-family:  'Berkshire Swash', cursive;
+	letter-spacing: 3px;
 	visibility: visible;
 
 	}
-	 nav ul li a{
+nav ul li a{
 		list-style-type: none;
 		text-decoration: none;
-		font-family: 'Berkshire Swash', cursive;
-		 color: #EFEFEF;
+	    color: #EFEFEF;
+		transition: color 0.4s ease;
+	    transition: opacity 0.4s ease;
+	}
+
+	nav ul li a:hover {
+		opacity: .8;
+	color:rgba(122,34,177,.80);
 	}
 	
-	
-.top a{
-	text-decoration: none;
-	width: 20%;
-	color: rgba(158,11,207,1.00);
-	font-size: 1rem;
-	float:left;
-	display: inline;
-	position: fixed;
-
-	
-}
-	
-	.img{
+.img{
 	float: left;
     width:33%;
-	padding: 2%;
-    border-right: 4px dotted  #CCB130;
-    border-top: 4px dotted  #CCB130;
+	padding: 1%;
+    border-right: 3px dotted  #CCB130;
+    border-left: 3px dotted  #CCB130;
+    border-bottom: 3px dotted #CCB130;
     overflow: hidden;
 
 	}
 	
 
-		figcaption{
+figcaption{
 		font-size:1.6rem;
 		color:#CCB130;
 	}
 	
 		
-	.btn2 {
+.btn2 {
+	width: 30%;
 	display: inline-block;
-	border: none;
-	border-radius:1rem;
-	background-color: white;
-	color:rgba(125,78,120,1.00);
-	padding: 1%;
+	background-color:#CCB130;
+	color:black;
+	padding: 2%;
 	margin-top:1rem;
 	text-decoration:none;
-	font-size: 1.5rem;
-	transition: opacity .5s ease-in;
-	
-}
- .btn2:hover {
-  width: 3rem;
-  height: 3rem;
-  transform: rotate(360deg);
+	font-size: 1.2rem;
+	transition: opacity .9s ease;
+ }
+ .btn2:hover{
+	opacity: 0.8;
 }
 
-
-			.caption{
+.caption{
 	display: none;
 	}
-		.img_overlay{
+.img_overlay{
 		height: 100%;
 	}
 
+
  .img_ticket{
-			border-top: 7px solid #CCB130;
-		border-bottom: 7px solid #CCB130;
-	 width: 70%;
-	 margin-left: 15%;
-		
+	
+	       margin-top:6%;
+			border-top: 20px  double #CCB130;
+			border-left: 20px double  #CCB130;
+			border-right: 20px double #CCB130;
+		    border-bottom: 20px double #CCB130;
+	        width: 70%;
+	        margin-left: 15%;
 	}
 	
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 1.6rem;
-  transition: 0.5s ease;
-}
-.active, .accordion:hover {
-  background-color:rgba(195,175,40,1.00); 
-}
-.panel {
-  padding: 0 2%;
-  display: none;
-  background-color:rgba(250,248,248,0.33);
-  overflow: hidden;
-}
-section2 .btn2{
-	display: none;
-	
-}
-	section2 h3{
-	display: none;
-}
-section2 .img_description{
-	display: none;
-}
-	section2 figcaption{
-	color:rgba(66,16,94,1.00);
-	font-size: 3rem;
 
+	.panel h3{
+	font-size: 2rem;
+	text-align: center;
+	margin-top:3%;
+	padding: 0;
 }
+.panel p{
+		font-size: 1.4;
+		column-count: 3;
+	    text-indent: 10%;
+	}
 
 	
 }
