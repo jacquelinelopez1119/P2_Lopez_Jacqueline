@@ -484,12 +484,13 @@ footer{
 	
 
  .img_ticket{
-			border-top: 20px  double #CCB130;
-			border-left: 20px double  #CCB130;
-			border-right: 20px double #CCB130;
-		    border-bottom: 20px double #CCB130;
-	        width: 80%;
-	        margin-left: 10%;
+	    border-radius: 5%;
+	    border-top: 20px  double #CCB130;
+	    border-left: 20px double  #CCB130;
+	    border-right: 20px double #CCB130;
+            border-bottom: 20px double #CCB130;
+	    width: 80%;
+	    margin-left: 10%;
 	}
 	
 .panel h3{
@@ -638,14 +639,14 @@ figcaption{
 
 
  .img_ticket{
-	
-	       margin-top:6%;
-			border-top: 20px  double #CCB130;
-			border-left: 20px double  #CCB130;
-			border-right: 20px double #CCB130;
-		    border-bottom: 20px double #CCB130;
-	        width: 70%;
-	        margin-left: 15%;
+        border-radius: 5%;
+        margin-top:6%;
+        border-top: 20px  double #CCB130;
+       	border-left: 20px double  #CCB130;
+	border-right: 20px double #CCB130;
+	border-bottom: 20px double #CCB130;
+        width: 70%;
+        margin-left: 15%;
 	}
 	
 
